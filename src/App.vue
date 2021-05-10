@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <div class="header img-nav">
-      <h1>HOLA, SOY ERNESTO DÍAZ,</h1>
-      <h2>Y SOY DEVELOPER Y PROTOTYPE.</h2>
+      <h1>ERNESTO DÍAZ</h1>
+      <h2>PROTOTYPER & FRONTEND DEVELOPER</h2>
       <img class="foto" alt="Vue logo" src="./assets/ernesto.png" />
     </div>
-    <div class="tab">
+    <!-- <div class="tab">
       <router-link class="tab-buttom" to="/">INFORMACIÓN</router-link>
       <router-link class="tab-buttom" to="/skils">SKILS</router-link>
       <router-link class="tab-buttom" to="/proyectos">PROYECTOS</router-link>
       <router-link class="tab-buttom" to="/hobby">HOBBIES</router-link>
       <router-link class="tab-buttom" to="/contacto">CONTACTO</router-link>
-    </div>
+    </div> -->
     <router-view></router-view>
   </div>
 </template>
@@ -30,18 +30,13 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  font-family: "Open Sans", sans-serif;
-  background: rgb(80, 89, 156);
-  background: linear-gradient(
-    297deg,
-    rgba(80, 89, 156, 1) 0%,
-    rgba(14, 15, 69, 1) 100%
-  );
-  background-image: rgb(0, 0, 0);
+
+  background-color: rgb(211, 211, 211);
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -64,7 +59,7 @@ body {
   position: absolute;
   bottom: -196px;
   transform: translate(-50%, -50%);
-  border: 3px solid #000000;
+  border: 5px solid #ffff;
 }
 
 .img-nav:after {
@@ -88,6 +83,8 @@ body {
   transform: translate(-50%, -50%);
 }
 #app > .header > h2 {
+  font-weight: 100;
+  font-size: 22px;
   position: absolute;
   top: 25%;
   left: 50%;
@@ -99,7 +96,7 @@ body {
   width: 1499px;
   margin: auto;
   background-color: #000000;
-  
+
   position: absolute;
   bottom: 384px;
   box-shadow: 0 8px 16px 0 rgb(255, 255, 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -184,4 +181,15 @@ h3 {
   margin: 0;
 }
 
+/**block informacion */
+.informacion > h2{
+  color: #000000;
+}
+.informacion > p  {
+  font-family: 'Roboto', sans-serif;
+  width: 60%;
+  margin: auto;
+  font-weight: 100;
+  color: #000000;
+}
 </style>
