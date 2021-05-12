@@ -22,9 +22,11 @@
     </p>
 
     <div class="tab">
-      <router-link class="buttom" to="/skils">SKILS</router-link>
-      <router-link class="buttom" to="/proyectos">PROYECTOS</router-link>
-      <router-link class="buttom" to="/hobby">HOBBIES</router-link>
+      
+        <router-link class="boton-uno" to="/skils">SKILS</router-link>
+        <router-link class="boton-dos" to="/proyectos">PROYECTOS</router-link>
+        <router-link class="boton-tres" to="/hobby">HOBBIES</router-link>
+               
     </div>
 
     <router-view></router-view>
@@ -39,8 +41,7 @@ export default {
 </script>
 
 <style>
-html {
-}
+
 body {
   margin: 0;
   width: 100%;
@@ -110,19 +111,30 @@ body {
 }
 
 /** bototones de skill/proyecto/hobbie */
-.tab {
-  margin: auto;
+.boton-uno,.boton-tres{
+  width: 7%;
+}
 
-  padding: 30px;
-  bottom: 1px;
-  left: 470px;
-}
-.buttom {
-  padding: 20px;
-  margin: 20px;
-  color: #000000;
+a:link, a:visited {
+  margin:3px;
+  background-color: #31313100;
+  color: rgb(0, 0, 0);
+  padding: 14px 25px;
+  text-align: center;
   text-decoration: none;
+  display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border:1px solid rgb(0, 0, 0);
 }
+
+a:hover, a:active {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+
+
 
 p {
   font-family: "Roboto", sans-serif;
