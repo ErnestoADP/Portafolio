@@ -1,26 +1,20 @@
 <template>
   <div>
-    <div class="div-boss">
-      <div class="contenedorsecundario">
-        <div class="text">
-          <p>
-            Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-            archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar
-            de las industrias desde el año 1500, cuando un impresor (N. del T.
-            persona que se dedica a la imprenta) desconocido usó una galería de
-            textos y los mezcló de tal manera que logró hacer un libro de textos
-            especimen.
-          </p>
-        </div>
-      </div>
-      <div class="contenedor">
-        <img
-          class="imginfo"
-          src="https://1.bp.blogspot.com/-tIQ3nd1YgFY/XsU3dF3NE6I/AAAAAAAB4Gg/rztoW5MlOaQfyK5oPqECclJGERgrSaTrQCLcBGAsYHQ/s1600/mejores-comics-batman.jpeg"
-          alt=" "
-        />
-      </div>
-    </div>
+  <h2 class="hobbie">HOBBIES</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+      felis mauris, tempus condimentum lacus ut, luctus ullamcorper justo. Donec
+      vel rhoncus mauris. Proin vestibulum consequat felis vitae porta. Aenean
+      est sapien, porttitor vestibulum felis eu, convallis euismod turpis. Nunc
+      vitae tellus felis. Cras quis sodales dolor. Suspendisse vulputate
+      vitae tellus felis. Cras quis sodales dolor. Suspendisse vulputate
+      ultricies tortor, ac sollicitudin dolor commodo vitae. Nam sodales
+      vestibulum feugiat. Nullam tincidunt eleifend imperdiet. Integer
+      vulputate, turpis non blandit fermentum, diam lectus dignissim lorem, sit
+      amet lacinia sem ligula quis ex. Praesent condimentum erat in nulla
+      dictum, sit amet rutrum magna commodo. Etiam nec nisl sit amet nulla
+      pellentesque mattis.
+    </p>
   </div>
 </template>
 

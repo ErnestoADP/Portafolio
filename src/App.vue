@@ -1,17 +1,32 @@
 <template>
   <div id="app">
     <div class="header img-nav">
-      <h1>ERNESTO DÍAZ</h1>
-      <h2>PROTOTYPER & FRONTEND DEVELOPER</h2>
+      <h1 class="titulo">ERNESTO DÍAZ</h1>
+      <h2 class="titulo">PROTOTYPER & FRONTEND DEVELOPER</h2>
+
       <img class="foto" alt="Vue logo" src="./assets/ernesto.png" />
     </div>
-    <!-- <div class="tab">
-      <router-link class="tab-buttom" to="/">INFORMACIÓN</router-link>
-      <router-link class="tab-buttom" to="/skils">SKILS</router-link>
-      <router-link class="tab-buttom" to="/proyectos">PROYECTOS</router-link>
-      <router-link class="tab-buttom" to="/hobby">HOBBIES</router-link>
-      <router-link class="tab-buttom" to="/contacto">CONTACTO</router-link>
-    </div> -->
+    <h2>PERFIL PROFESIONAL</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+      felis mauris, tempus condimentum lacus ut, luctus ullamcorper justo. Donec
+      vel rhoncus mauris. Proin vestibulum consequat felis vitae porta. Aenean
+      est sapien, porttitor vestibulum felis eu, convallis euismod turpis. Nunc
+      vitae tellus felis. Cras quis sodales dolor. Suspendisse vulputate vitae
+      tellus felis. Cras quis sodales dolor. Suspendisse vulputate ultricies
+      tortor, ac sollicitudin dolor commodo vitae. Nam sodales vestibulum
+      feugiat. Nullam tincidunt eleifend imperdiet. Integer vulputate, turpis
+      non blandit fermentum, diam lectus dignissim lorem, sit amet lacinia sem
+      ligula quis ex. Praesent condimentum erat in nulla dictum, sit amet rutrum
+      magna commodo. Etiam nec nisl sit amet nulla pellentesque mattis.
+    </p>
+
+    <div class="tab">
+      <router-link class="buttom" to="/skils">SKILS</router-link>
+      <router-link class="buttom" to="/proyectos">PROYECTOS</router-link>
+      <router-link class="buttom" to="/hobby">HOBBIES</router-link>
+    </div>
+
     <router-view></router-view>
   </div>
 </template>
@@ -47,9 +62,12 @@ body {
   background-color: rgba(0, 0, 0, 0.486);
   margin: auto;
   padding-top: 100px;
-  padding-bottom: 200px;
-  margin-bottom: 160px;
+  padding-bottom: 300px;
+  margin-bottom: 120px;
   position: relative;
+}
+.titulo {
+  color: white;
 }
 
 #app > .header > .foto {
@@ -78,7 +96,7 @@ body {
 
 #app > .header > h1 {
   position: absolute;
-  top: 10%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -86,107 +104,28 @@ body {
   font-weight: 100;
   font-size: 22px;
   position: absolute;
-  top: 25%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+/** bototones de skill/proyecto/hobbie */
 .tab {
-  padding: 10px;
-  width: 1499px;
   margin: auto;
-  background-color: #000000;
 
-  position: absolute;
-  bottom: 384px;
-  box-shadow: 0 8px 16px 0 rgb(255, 255, 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 30px;
+  bottom: 1px;
+  left: 470px;
 }
-
-.tab-buttom {
-  margin: 60px;
-  background-color: #000000;
-  color: white;
-  text-decoration: none;
-  border-radius: 10%;
-}
-
-h1,
-h2 {
-  color: white;
-}
-
-p {
-  color: white;
-}
-.div-boss {
-  display: flex;
-  justify-content: center;
-}
-.contenedorsecundario {
-  width: 500px;
-  height: 245px;
-  margin: 40px;
-
-  color: white;
-  border: 2px solid #000000;
-  box-shadow: 10px 10px black;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.contenedor-secundario {
-  width: 600px;
-  height: 300px;
-  margin: 40px;
-  color: white;
-  border: 2px solid #000000;
-  box-shadow: 10px 10px black;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.text {
-  padding: 15px;
-  margin: 10px;
-}
-
-p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-.contenedor {
-  width: 500px;
-  height: 245px;
-  margin: 40px;
-  border: 2px solid #000000;
-  box-shadow: 10px 10px black;
-}
-.imginfo {
-  width: 500px;
-  height: 245px;
-  margin: 0;
-}
-
-/**iconos */
-.icons {
-  width: 30px;
-  height: 30px;
-}
-
-.contactos {
-  display: flex;
-  flex-direction: row;
-  height: 55px;
-}
-h3 {
-  margin: 0;
-}
-
-/**block informacion */
-.informacion > h2{
+.buttom {
+  padding: 20px;
+  margin: 20px;
   color: #000000;
+  text-decoration: none;
 }
-.informacion > p  {
-  font-family: 'Roboto', sans-serif;
+
+p {
+  font-family: "Roboto", sans-serif;
   width: 60%;
   margin: auto;
   font-weight: 100;
