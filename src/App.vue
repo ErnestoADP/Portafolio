@@ -22,14 +22,25 @@
     </p>
 
     <div class="tab">
-      
-        <router-link class="boton-uno" to="/skils">SKILS</router-link>
-        <router-link class="boton-dos" to="/proyectos">PROYECTOS</router-link>
-        <router-link class="boton-tres" to="/hobby">HOBBIES</router-link>
-               
+      <router-link class="boton-uno" to="/skils">SKILLS</router-link>
+      <router-link class="boton-dos" to="/proyectos">PROYECTOS</router-link>
+      <router-link class="boton-tres" to="/hobby">HOBBIES</router-link>
     </div>
 
     <router-view></router-view>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+      felis mauris, tempus condimentum lacus ut, luctus ullamcorper justo. Donec
+      vel rhoncus mauris. Proin vestibulum consequat felis vitae porta. Aenean
+      est sapien, porttitor vestibulum felis eu, convallis euismod turpis. Nunc
+      vitae tellus felis. Cras quis sodales dolor. Suspendisse vulputate vitae
+      tellus felis. Cras quis sodales dolor. Suspendisse vulputate ultricies
+      tortor, ac sollicitudin dolor commodo vitae. Nam sodales vestibulum
+      feugiat. Nullam tincidunt eleifend imperdiet. Integer vulputate, turpis
+      non blandit fermentum, diam lectus dignissim lorem, sit amet lacinia sem
+      ligula quis ex. Praesent condimentum erat in nulla dictum, sit amet rutrum
+      magna commodo. Etiam nec nisl sit amet nulla pellentesque mattis.
+    </p>
   </div>
 </template>
 
@@ -41,7 +52,6 @@ export default {
 </script>
 
 <style>
-
 body {
   margin: 0;
   width: 100%;
@@ -111,12 +121,14 @@ body {
 }
 
 /** bototones de skill/proyecto/hobbie */
-.boton-uno,.boton-tres{
-  width: 7%;
+.boton-uno,
+.boton-tres {
+  width: 9%;
 }
 
-a:link, a:visited {
-  margin:3px;
+a:link,
+a:visited {
+  margin: 3px;
   background-color: #31313100;
   color: rgb(0, 0, 0);
   padding: 14px 25px;
@@ -125,16 +137,15 @@ a:link, a:visited {
   display: inline-block;
   margin-top: 40px;
   margin-bottom: 20px;
-  border:1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   background-color: rgb(0, 0, 0);
   color: white;
 }
-
-
-
 
 p {
   font-family: "Roboto", sans-serif;
@@ -142,5 +153,33 @@ p {
   margin: auto;
   font-weight: 100;
   color: #000000;
+}
+
+.w3-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-image: url("./assets/4.jpg");
+  background-size: cover;
+
+  opacity: 0.7;
+
+  border: 4px solid rgb(0, 0, 0);
+ 
+}
+
+.w3-light-grey {
+  margin: auto;
+  width: 50%;
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 4px;
+}
+
+.p-skills{
+  color: white;
+}
+.p-skills-dos{
+  color: rgb(0, 0, 0);
 }
 </style>
