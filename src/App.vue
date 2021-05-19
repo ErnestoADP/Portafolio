@@ -8,49 +8,55 @@
     </div>
     <h2>PERFIL PROFESIONAL</h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-      felis mauris, tempus condimentum lacus ut, luctus ullamcorper justo. Donec
-      vel rhoncus mauris. Proin vestibulum consequat felis vitae porta. Aenean
-      est sapien, porttitor vestibulum felis eu, convallis euismod turpis. Nunc
-      vitae tellus felis. Cras quis sodales dolor. Suspendisse vulputate vitae
-      tellus felis. Cras quis sodales dolor. Suspendisse vulputate ultricies
-      tortor, ac sollicitudin dolor commodo vitae. Nam sodales vestibulum
-      feugiat. Nullam tincidunt eleifend imperdiet. Integer vulputate, turpis
-      non blandit fermentum, diam lectus dignissim lorem, sit amet lacinia sem
-      ligula quis ex. Praesent condimentum erat in nulla dictum, sit amet rutrum
-      magna commodo. Etiam nec nisl sit amet nulla pellentesque mattis.
+      Titulado de Técnico Analista en Programación, con un año de experiencia en
+      proyectos freelance y académicos. Usando las tegnologias de HTML5,
+      CSS3(BOOSTRAP4), javaSCript, PHP, VUE.JS, GIT, JAVA, MVC & CRUD.
     </p>
 
     <div class="tab">
-      <router-link class="boton-uno" to="/skils">SKILLS</router-link>
-      <router-link class="boton-dos" to="/proyectos">PROYECTOS</router-link>
-      <router-link class="boton-tres" to="/hobby">HOBBIES</router-link>
+      <router-link class="rutas boton-uno" to="/skils">SKILLS</router-link>
+      <router-link class="rutas boton-dos" to="/proyectos"
+        >PROYECTOS</router-link
+      >
+      <router-link class="rutas boton-tres" to="/hobby">HOBBIES</router-link>
     </div>
 
     <router-view></router-view>
-    <div class="contacto">
-      <h3>CONTACTO</h3>
 
-      <div class="container">
-        <form action="/action_page.php">
-          <label for="fname">Nombre</label>
-          <input type="text" id="fname" name="firstname" placeholder="Nombre" />
-
-          <label for="lname">Asunto</label>
-          <input type="text" id="lname" name="lastname" placeholder="Asunto" />
-
-          <label for="subject">Mensaje</label>
-          <textarea
-            id="subject"
-            name="subject"
-            placeholder="Mensaje.."
-            style="height: 200px"
-          ></textarea>
-
-          <input type="submit" value="Submit" />
-        </form>
+    <footer class="footer">
+      <div class="caja-footer">
+        <div class="caja">
+          <h4>CONTACTO</h4>
+          <ul>
+            <li>Gmail: Ernesto.adp1@gmail.com</li>
+            <li>WhatsApp: +56936618654</li>
+          </ul>
+        </div>
+        <div class="caja">
+          <h4>ENLACES UTILES</h4>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/ernestoandres.diazplaza"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ernesthordiaz/?hl=es-la"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ernesto-andres-diaz-plaza-b824351a6/"
+                >Linkedin</a
+              >
+            </li>
+            <li><a href="https://github.com/ErnestoADP">GitHub</a></li>
+          </ul>
+        </div>
+        <div class="caja"></div>
       </div>
-    </div>
+    </footer>
   </div>
 </template>
 
@@ -66,7 +72,8 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-
+  background-color: lightgrey;
+  font-family: sans-serif;
   background-color: rgb(211, 211, 211);
 }
 
@@ -136,8 +143,8 @@ body {
   width: 9%;
 }
 
-a:link,
-a:visited {
+.rutas:link,
+.rutas:visited {
   margin: 3px;
   background-color: #31313100;
   color: rgb(0, 0, 0);
@@ -151,8 +158,8 @@ a:visited {
   border-radius: 4px;
 }
 
-a:hover,
-a:active {
+.rutas:hover,
+.rutas:active {
   background-color: rgb(0, 0, 0);
   color: white;
 }
@@ -170,7 +177,6 @@ p {
 /**----------------------------barras de skills---------------------------------------------------- */
 .boss {
   background-image: url("./assets/8.jpg");
-
   width: 100%;
   background-size: cover;
 }
@@ -181,6 +187,10 @@ p {
   height: 100%;
   padding: 20px;
   padding-bottom: 100px;
+}
+
+.w3-caja {
+  padding-top: 20px;
 }
 
 .w3-container {
@@ -214,54 +224,120 @@ p {
 }
 /**-------------------------------------------------------fin----------------------------------- */
 
-/**--------------------------------------------------------CONTACTO----------------------------------- */
-.contacto {
-  width: 60%;
-  padding-bottom: 30px;
+/**--------------------------------------------------footer----------------------------------------------------- */
+.footer {
+  background-color: #0000002e;
+}
+.caja-footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+.caja {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+.caja > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**----------------------------------------------fin-footer----------------------------------------------------- */
+.container-dos {
+  margin: auto;
+
   display: flex;
   flex-direction: column;
 
+  align-items: center;
+  padding: 40px;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul.slider {
+  position: relative;
+  width: 800px;
+  height: 300px;
+}
+
+ul.slider li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity 0.5s;
+  background: #fff;
+}
+
+ul.slider li img {
+  display: block;
   margin: auto;
-}
-
-input[type="text"],
-select,
-textarea {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+  height: 122%;
+  object-fit: cover;
 }
 
-input[type="submit"] {
-  margin: 3px;
-  background-color: #31313100;
-  color: rgb(0, 0, 0);
-  padding: 14px 25px;
+ul.slider li:first-child {
+  opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+  opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu {
   text-align: center;
-  text-decoration: none;
+  margin: 70px;
+}
+
+.menu li {
   display: inline-block;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 4px;
+  text-align: center;
 }
 
-input[type="submit"]:hover {
-  background-color: #000000;
+.menu li a {
+  display: inline-block;
   color: white;
+  text-decoration: none;
+  background-color: grey;
+
+  width: 20px;
+  height: 20px;
+
+  border-radius: 100%;
 }
 
-.container {
-  border-radius: 5px;
-  background-color: rgb(211, 211, 211);
-  border: 3px solid rgb(0, 0, 0);
-  padding: 20px;
+.div-boss {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/**------------------------------------------------FIN---------------------------------------------------------- */
+.contenedor {
+  width: 500px;
+  height: 245px;
+  margin: auto;
+
+  box-shadow: 10px 10px;
+}
+.contenedorsecundario {
+}
+.text {
+  padding: 15px;
+}
+.imginfo {
+  width: 500px;
+  height: 245px;
+}
 </style>

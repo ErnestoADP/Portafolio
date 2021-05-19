@@ -1,19 +1,45 @@
 <template>
-  <div>
-      <h2 class="proyectos">PROYECTOS</h2>
+  <div class="container-dos">
+    <ul class="slider">
+      <li id="slide1">
+        <img src="../assets/myp.png" />
+      </li>
+      <li id="slide2">
+        <img src="../assets/formUser.png" />
+      </li>
+      <li id="slide3">
+        <img src="../assets/login.png" />
+      </li>
+    </ul>
+
+    <ul class="menu">
+      <li>
+        <a href="#slide1">1</a>
+      </li>
+      <li>
+        <a href="#slide2">2</a>
+      </li>
+      <li>
+        <a href="#slide3">3</a>
+      </li>
+    </ul>
+    <h3>PROYECTO 1</h3>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-      felis mauris, tempus condimentum lacus ut, luctus ullamcorper justo. Donec
-      vel rhoncus mauris. Proin vestibulum consequat felis vitae porta. Aenean
-      est sapien, porttitor vestibulum felis eu, convallis euismod turpis. Nunc
-      vitae tellus felis. Cras quis sodales dolor. Suspendisse vulputate
-      vitae tellus felis. Cras quis sodales dolor. Suspendisse vulputate
-      ultricies tortor, ac sollicitudin dolor commodo vitae. Nam sodales
-      vestibulum feugiat. Nullam tincidunt eleifend imperdiet. Integer
-      vulputate, turpis non blandit fermentum, diam lectus dignissim lorem, sit
-      amet lacinia sem ligula quis ex. Praesent condimentum erat in nulla
-      dictum, sit amet rutrum magna commodo. Etiam nec nisl sit amet nulla
-      pellentesque mattis.
+      PRACTICA PROFESIONAL: <br />
+      Maestros y Profesionales. desde Marzo 2020 a junio 2020. <br />
+      Desarrollando y mantenmiento en el sitio web
+    </p>
+    <h3>PROYECTO 2</h3>
+    <p>
+      TRABAJO EXTRACURRICULAR. <br />
+      Trabajo freelance. desde junio 2020 a mayo 2021. <br />
+      Usando tegnolojia de HTML5, CSS3, javaSCript.
+    </p>
+    <h3>PROYECTO 3</h3>
+    <p>
+      TRABAJO EXTRACURRICULAR. <br />
+      Trabajo freelance. desde junio 2020 a mayo 2021. <br />
+      Usando tegnolojia de HTML5, CSS3, javaSCript.
     </p>
   </div>
 </template>
@@ -24,6 +50,10 @@ export default {
   components: {},
 };
 </script>
+
+
+
+
 
 <style lang="scss" scoped>
 </style>
