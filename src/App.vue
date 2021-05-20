@@ -34,27 +34,29 @@
         </div>
         <div class="caja">
           <h4>ENLACES UTILES</h4>
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/ernestoandres.diazplaza"
-                >Facebook</a
-              >
-            </li>
-            <li>
-              <a href="https://www.instagram.com/ernesthordiaz/?hl=es-la"
-                >Instagram</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/ernesto-andres-diaz-plaza-b824351a6/"
-                >Linkedin</a
-              >
-            </li>
-            <li><a href="https://github.com/ErnestoADP">GitHub</a></li>
-          </ul>
+
+          <a class="enlaces" href="https://www.facebook.com/ernestoandres.diazplaza"
+            ><i class="bi bi-facebook"></i>
+          </a>
+
+          <a class="enlaces" href="https://www.instagram.com/ernesthordiaz/?hl=es-la"
+            ><i class="bi bi-instagram"></i
+          ></a>
+
+          <a class="enlaces"
+            href="https://www.linkedin.com/in/ernesto-andres-diaz-plaza-b824351a6/"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+
+          <a class="enlaces" href="https://github.com/ErnestoADP"
+            ><i class="bi bi-github"></i
+          ></a>
         </div>
-        <div class="caja"></div>
+        <div class="caja">
+          <div class="logo"><img class="img-logo"  src="./assets/logo.png" alt="">
+          <span>Portafolio desarrolado en Vue.Js</span></div>
+          
+        </div>
       </div>
     </footer>
   </div>
@@ -245,6 +247,21 @@ p {
   padding: 0;
 }
 
+.enlaces{
+  padding: 7px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.img-logo{
+  width: 20%;
+}
+
 /**----------------------------------------------fin-footer----------------------------------------------------- */
 .container-dos {
   margin: auto;
@@ -331,8 +348,7 @@ ul.slider li:target {
 
   box-shadow: 10px 10px;
 }
-.contenedorsecundario {
-}
+
 .text {
   padding: 15px;
 }
