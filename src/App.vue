@@ -29,21 +29,32 @@
           <h4>CONTACTO</h4>
           <ul>
             <li>Gmail: Ernesto.adp1@gmail.com</li>
-            <li>WhatsApp: +56936618654</li>
+            <li><a href="https://wa.me/56936618654">WhatsApp</a></li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1chKEQPv0iXCmmspfI2BxC6o-LP8DJW_d/view?usp=sharing"
+                >Curriculum Vitae</a
+              >
+            </li>
           </ul>
         </div>
         <div class="caja">
           <h4>ENLACES UTILES</h4>
 
-          <a class="enlaces" href="https://www.facebook.com/ernestoandres.diazplaza"
+          <a
+            class="enlaces"
+            href="https://www.facebook.com/ernestoandres.diazplaza"
             ><i class="bi bi-facebook"></i>
           </a>
 
-          <a class="enlaces" href="https://www.instagram.com/ernesthordiaz/?hl=es-la"
+          <a
+            class="enlaces"
+            href="https://www.instagram.com/ernesthordiaz/?hl=es-la"
             ><i class="bi bi-instagram"></i
           ></a>
 
-          <a class="enlaces"
+          <a
+            class="enlaces"
             href="https://www.linkedin.com/in/ernesto-andres-diaz-plaza-b824351a6/"
             ><i class="bi bi-linkedin"></i
           ></a>
@@ -51,11 +62,16 @@
           <a class="enlaces" href="https://github.com/ErnestoADP"
             ><i class="bi bi-github"></i
           ></a>
+
+          <a class="enlaces" href="https://wa.me/56936618654"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
         </div>
         <div class="caja">
-          <div class="logo"><img class="img-logo"  src="./assets/logo.png" alt="">
-          <span>Portafolio desarrolado en Vue.Js</span></div>
-          
+          <div class="logo">
+            <img class="img-logo" src="./assets/logo.png" alt="" />
+            <span>Portafolio desarrolado en Vue.Js</span>
+          </div>
         </div>
       </div>
     </footer>
@@ -247,18 +263,18 @@ p {
   padding: 0;
 }
 
-.enlaces{
+.enlaces {
   padding: 7px;
 }
 
-.logo{
+.logo {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: auto;
 }
 
-.img-logo{
+.img-logo {
   width: 20%;
 }
 
